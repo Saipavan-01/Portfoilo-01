@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="XX-UA-copatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="coninter">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Saipavan</span></h1>
+                <p style="font-size:smaller; margin-bottom: 50px;" >3rd Year</p>
+            </div>
+        </div>
+
+    </div>
+<!---------------------------------About------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="imag/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sb-title">About Me</h1>
+                <p class="II">"Hello, my name is <span>Saipavan</span>, and I'm currently pursuing a Bachelor's degree in <span>Computer Science and Engineering</span> at Ramachandra College of engineering. <br>I'm set to graduate in 2025, Throughout my academic journey, I will developed a strong foundation in <span>C++ & Web-Development</span>, and I've consistently been recognized for my dedication to excellence.I'm confident that my technical skills, adaptability, and passion for IIT I ndustry make me a strong fit for<span> Software Engineer</span>. I'm eager to contribute to Google’s innovative projects and collaborate with the talented team. As I move forward, I'm curious to know more about Google.
+                </p>
+                <div class="tad-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contants active-tab" id="skills">
+                    <ul>
+                        <li><span>C++</span><br>Algorithms and Data Structures</li>
+                        <li><span>Python</span><br>Debugging and Problem Solving</li>
+                        <li><span>UI/UX</span><br>Desiging Apps for IOS/Android</li
+
+                    </ul>
+                </div>
+                <div class="tab-contants" id="education" >
+                    <ul>
+                        <li><span>2023-Current</span><br>B.Tech 3rd Year</li>
+                        <li><span>2020 - 2018</span><br>Intermediate</li>
+                        <li><span>2018 - 2016</span><br> 10th Class</li>
+                    </ul>
+                </div>
+                <div class="tab-contants" id="experience">
+                    <ul>
+                        <li><span>C++</span><br>Adavance</li>
+                        <li><span> Python</span><br>Intermediate</li>
+                        <li><span>UI/UX</span><br>basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------My projects ---------------------------->
+<div id="MY-projects">
+    <div class="container">
+        <h1 class="sb-title">About My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Project-1</h2>
+                <p>About My Portfolio</p>
+                <br>
+                <p>
+                    A portfolio is a systematic collection of student work that represents student activities, accomplishments, and achievements over a specific period of time in one or more areas of the curriculum. .</p>
+                <a href="#">more about</a>
+            </div>
+            <div>
+                <h2>Project-2</h2>
+                <p>null</p><br>
+                <p>..............................................NOT CREATED............................................................</p>
+                <a href="#">more about</a>
+            </div>
+            <div>
+                <h2>Project-3</h2>
+                <p>null</p><br>
+                <p>..............................................NOT CREATED...........................................................</p>
+                <a href="#">more about</a>
+            </div>
+
+        </div>
+         
+    </div>
+</div>
+<!-------------------------------Script--------------------------------------->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontants=document.getElementsByClassName("tab-contants")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontant of tabcontants){
+            tabcontant.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+        
+    }
+
+</script>
+</body>
+</html>

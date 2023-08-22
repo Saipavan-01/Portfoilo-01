@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box; 
+
+
+}
+body{
+    background: #000000;
+    color: white;
+}
+.coninter{
+    margin-top: 40px;
+    margin-left: 25px;
+}
+#header{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center ;
+}
+nav{
+    align-items: left;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.55s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 0;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 40px;
+
+
+}
+.header-text h1 span{
+    color: red;
+
+}
+/*-----------------------ABOUT--------------*/
+
+#about{
+    padding: 8px 0;
+    color: rgb(227, 233, 233);
+    margin-left: 25px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.sb-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+.II span{
+    color: red;
+}
+.tad-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    
+}
+.tab-links::after{
+    content: '' ;
+    width: 0;
+    height: 3px;
+    background: #df095b93;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.35s;
+    
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contants ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.tab-contants ul li span{
+    color: #ff0000;
+    font-size: 14px;
+}
+.tab-contants{
+    display:none;
+}
+.tab-contants.active-tab{
+    display: block;
+}
+.ss{
+    margin: 0 10px;
+}
+
+/*-----------------------Projects----------------------*/
+#MY-projects{
+    margin-left: 26px;
+    margin-top: 50px;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
